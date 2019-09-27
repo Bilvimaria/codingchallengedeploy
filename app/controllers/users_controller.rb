@@ -18,4 +18,9 @@ class UsersController < BackendController
     def user_params
         params.require(:user).permit(:name)
     end
+
+    def current_user_articles
+      @articles = current_user_articles
+    end
+    
   end
