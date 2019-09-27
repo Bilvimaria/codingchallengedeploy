@@ -1,6 +1,7 @@
 class ArticlesController < BackendController
     def index
         @articles = Article.all
+        #@lists = Article.where user: current_user
     end
     def new
         @article = Article.new
